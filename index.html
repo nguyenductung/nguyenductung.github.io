@@ -1,3 +1,4 @@
+<!-- motion graphic typeface by ara_node http://codepen.io/ara_node/ -->
 <!DOCTYPE html>
 <html>
   <head>
@@ -10,23 +11,9 @@
   </head>
   <body>
     <div id="Page">
-      <svg viewBox="0 0 800 600">
-        <symbol id="s-text">
-          <text text-anchor="middle" x="50%" y="35%" class="text--line">
-            Hi
-          </text>
-          <text text-anchor="middle" x="50%" y="68%" class="text--line2">
-            there!
-          </text>
-        </symbol>
-        <g class="g-ants">
-          <use xlink:href="#s-text" class="text-copy"></use>
-          <use xlink:href="#s-text" class="text-copy"></use>
-          <use xlink:href="#s-text" class="text-copy"></use>
-          <use xlink:href="#s-text" class="text-copy"></use>
-          <use xlink:href="#s-text" class="text-copy"></use>
-        </g>
-      </svg>
+      <canvas id="canvas" style="position:absolute; top:0; left:0;"></canvas>
+      <div id="buffer" style="display:none;"></div>
     </div><!-- /#Page -->
+    <script src="assets/stylesheets/application.js"></script>
   </body>
 </html>
